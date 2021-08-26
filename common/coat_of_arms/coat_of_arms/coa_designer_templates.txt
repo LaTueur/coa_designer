@@ -1,0 +1,56 @@
+template = {
+	fixed_coa = {
+		# like k_france fleury
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_0"
+		color2 = list "fixed_color_1"
+		color3 = list "fixed_color_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+            color1 = list "fixed_color_3"
+            color2 = list "fixed_color_4"
+            color3 = list "fixed_color_5"
+			instance = { position = { 0.10 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 1.00 } scale = { 0.20 0.20 }  }
+		}
+
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+            color1 = list "fixed_color_6"
+            color2 = list "fixed_color_7"
+            color3 = list "fixed_color_8"
+		}
+	}
+}

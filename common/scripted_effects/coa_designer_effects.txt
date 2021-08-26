@@ -1,0 +1,15 @@
+﻿initialize_fixed_coa = {
+    set_variable = { name = fixed_coa value = yes }
+    set_variable = { name = fixed_pattern value = 0 }
+    set_variable = { name = fixed_emblem_0 value = 0 }
+    set_variable = { name = fixed_emblem_1 value = 0 }
+    set_variable = { name = fixed_color_0 value = 0 }
+    set_variable = { name = fixed_color_1 value = 0 }
+    set_variable = { name = fixed_color_2 value = 0 }
+    set_variable = { name = fixed_color_3 value = 0 }
+    set_variable = { name = fixed_color_4 value = 0 }
+    set_variable = { name = fixed_color_5 value = 0 }
+    set_variable = { name = fixed_color_6 value = 0 }
+    set_variable = { name = fixed_color_7 value = 0 }
+    set_variable = { name = fixed_color_8 value = 0 }
+}
