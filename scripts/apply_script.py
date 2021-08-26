@@ -243,19 +243,23 @@ if __name__ == '__main__':
 
     patterns = []
     for path in glob.glob(game_path + '\\gfx\\coat_of_arms\\patterns\\*.dds'):
-        name = os.path.basename(path)
+        name = os.path.splitext(os.path.basename(path))[0]
+        if " " in name:
+            continue
         patterns.append(name)
     macros["patterns"] = patterns
 
     emblems = []
     for path in glob.glob(game_path + '\\gfx\\coat_of_arms\\colored_emblems\\*.dds'):
-        name = os.path.basename(path)
+        name = os.path.splitext(os.path.basename(path))[0]
+        if " " in name:
+            continue
         emblems.append(name)
     macros["emblems"] = emblems
 
-
-    paths = ['templates\\colors.txt', 'templates\\scripted_guis.txt']
-    outpaths = ['colors.txt', 'scripted_guis.txt']
+    paths = []
+    for path in glob.glob("templates\\*"):
+        paths.append(path)
     files = [parse_file(path) for path in paths]
 
     check = [True]
@@ -269,5 +273,5 @@ if __name__ == '__main__':
     check = [True]
             
     for i in range(len(paths)):
-        with open(outpaths[i], 'w', encoding='utf-8-sig') as f:
+        with open(paths[i].replace("templates", "out"), 'w', encoding='utf-8-sig') as f:
             f.write(reconstruct(files[i]))

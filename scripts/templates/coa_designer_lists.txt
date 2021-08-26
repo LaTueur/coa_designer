@@ -1,0 +1,62 @@
+﻿color_lists = {
+    ^^color_types^
+        fixed_color_pattern_&color_types.id& = {
+            ^^colors^
+                special_selection = {
+                    trigger = {
+                        scope:culture = {
+                            var:fixed_color_pattern_&color_types.id& = &colors.id&
+                        }
+                    }
+                    100 = "&colors&"
+                }
+            ^
+        }
+    ^
+    ^^emblem_types^
+        ^^color_types^
+            fixed_color_&emblem_types.id&_&color_types.id& = {
+                ^^colors^
+                    special_selection = {
+                        trigger = {
+                            scope:culture = {
+                                var:fixed_color_&emblem_types.id&_&color_types.id& = &colors.id&
+                            }
+                        }
+                        100 = "&colors&"
+                    }
+                ^
+            }
+        ^
+    ^
+}
+pattern_texture_lists = {
+    fixed_pattern = {
+        ^^patterns^
+            special_selection = {
+                trigger = {
+                    scope:culture = {
+                        var:fixed_pattern = flag:&patterns&
+                    }
+                }
+                100 = "&patterns&.dds"
+            }
+        ^
+    }
+}
+colored_emblem_texture_lists = {
+    ^^emblem_types^
+        fixed_emblem_&emblem_types.id& = {
+            ^^emblems^
+                special_selection = {
+                    trigger = {
+                        scope:culture = {
+                            var:fixed_emblem_&emblem_types.id& = flag:&emblems&
+                        }
+                    }
+                    100 = "&emblems&.dds"
+                }
+            ^
+        }
+    ^
+}

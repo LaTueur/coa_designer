@@ -42,6 +42,7 @@ window = {
 		on_start = "[GetVariableSystem.Clear( 'appearance_customization_window_open' )]"
 		on_start = "[GetVariableSystem.Clear( 'appearance_customization_side_tab_open' )]"
 		on_start = "[GetVariableSystem.Clear( 'appearance_customization_portrait_view' )]"
+		on_start = "[GetVariableSystem.Clear( 'coa_customization_open' )]"
 	}
 
 	state = {
@@ -93,7 +94,7 @@ window = {
 
 		hbox = {
 			name = "main_designer"
-			visible = "[Not( VariableSystem.Exists( 'appearance_customization_window_open' ) )]"
+			visible = "[And(Not( VariableSystem.Exists( 'appearance_customization_window_open' ) ),  Not( VariableSystem.Exists( 'coa_customization_open' ) ) )]"
 			layoutpolicy_horizontal = expanding
 			layoutpolicy_vertical = expanding
 			margin = { 20 20 }
@@ -494,289 +495,10 @@ window = {
 											tooltip = RULER_DESIGNER_RANDOMIZE_DYNASTY_COA
 											using = tooltip_se
 										}
-										
-										datacontext = "[RulerDesignerWindow.GetCulture]"
-										vbox = {
-											hbox = {
-												button_select_arrow = {
-													name = "decrease_fixed_pattern"
-													mirror = horizontal
-													datacontext = "[GetScriptedGui( 'decrease_fixed_pattern' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-												button_select_arrow = {
-													name = "increase_fixed_pattern"
-													datacontext = "[GetScriptedGui( 'increase_fixed_pattern' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-											}
-											hbox = {
-												button_select_arrow = {
-													name = "decrease_fixed_color_0"
-													mirror = horizontal
-													datacontext = "[GetScriptedGui( 'decrease_fixed_color_0' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-												button_select_arrow = {
-													name = "increase_fixed_color_0"
-													datacontext = "[GetScriptedGui( 'increase_fixed_color_0' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-											}
-											hbox = {
-												button_select_arrow = {
-													name = "decrease_fixed_color_1"
-													mirror = horizontal
-													datacontext = "[GetScriptedGui( 'decrease_fixed_color_1' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-												button_select_arrow = {
-													name = "increase_fixed_color_1"
-													datacontext = "[GetScriptedGui( 'increase_fixed_color_1' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-											}
-											hbox = {
-												button_select_arrow = {
-													name = "decrease_fixed_color_2"
-													mirror = horizontal
-													datacontext = "[GetScriptedGui( 'decrease_fixed_color_2' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-												button_select_arrow = {
-													name = "increase_fixed_color_2"
-													datacontext = "[GetScriptedGui( 'increase_fixed_color_2' )]"
-													onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-													state = {
-														name = _mouse_click
-														delay = 0.001
-														on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-													}
-												}
-											}
-										}
-										vbox = {
-											hbox = {
-											button_select_arrow = {
-												name = "increase_fixed_emblem_0"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'increase_fixed_emblem_0' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "decrease_fixed_emblem_0"
-												datacontext = "[GetScriptedGui( 'decrease_fixed_emblem_0' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-											hbox = {
-											button_select_arrow = {
-												name = "decrease_fixed_color_3"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'decrease_fixed_color_3' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "increase_fixed_color_3"
-												datacontext = "[GetScriptedGui( 'increase_fixed_color_3' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-											hbox = {
-											button_select_arrow = {
-												name = "decrease_fixed_color_4"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'decrease_fixed_color_4' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "increase_fixed_color_4"
-												datacontext = "[GetScriptedGui( 'increase_fixed_color_4' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-											hbox = {
-											button_select_arrow = {
-												name = "decrease_fixed_color_5"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'decrease_fixed_color_5' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "increase_fixed_color_5"
-												datacontext = "[GetScriptedGui( 'increase_fixed_color_5' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-										}
-										vbox = {
-											hbox = {
-											button_select_arrow = {
-												name = "increase_fixed_emblem_1"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'increase_fixed_emblem_1' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "decrease_fixed_emblem_1"
-												datacontext = "[GetScriptedGui( 'decrease_fixed_emblem_1' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-											hbox = {
-											button_select_arrow = {
-												name = "decrease_fixed_color_6"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'decrease_fixed_color_6' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "increase_fixed_color_6"
-												datacontext = "[GetScriptedGui( 'increase_fixed_color_6' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-											hbox = {
-											button_select_arrow = {
-												name = "decrease_fixed_color_7"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'decrease_fixed_color_7' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "increase_fixed_color_7"
-												datacontext = "[GetScriptedGui( 'increase_fixed_color_7' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
-											hbox = {
-											button_select_arrow = {
-												name = "decrease_fixed_color_8"
-												mirror = horizontal
-												datacontext = "[GetScriptedGui( 'decrease_fixed_color_8' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											button_select_arrow = {
-												name = "increase_fixed_color_8"
-												datacontext = "[GetScriptedGui( 'increase_fixed_color_8' )]"
-												onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-												state = {
-													name = _mouse_click
-													delay = 0.001
-													on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
-												}
-											}
-											}
+										button_randomize = {
+											onclick = "[VariableSystem.Toggle( 'coa_customization_open' )]"
+											tooltip = RULER_DESIGNER_RANDOMIZE_DYNASTY_COA
+											using = tooltip_se
 										}
 									}
 								}
@@ -2371,6 +2093,8 @@ window = {
 				}
 			}
 		}
+
+		coa_customizer_view = {}
 	}
 }
 

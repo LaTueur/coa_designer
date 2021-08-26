@@ -1,0 +1,696 @@
+﻿initialize_fixed_coa = {
+	scope = culture
+	effect = {
+		initialize_fixed_coa = yes
+	}
+}
+increase_fixed_template = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_template < 3
+			}
+			change_variable = { 
+				name = fixed_template
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_template
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_template = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_template > 0
+			}
+			change_variable = { 
+				name = fixed_template
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_template
+				value = 3
+			}
+		}
+	}
+}
+select_pattern = { 
+	scope = culture
+	saved_scopes = { emblem}
+	effect = { 
+		set_variable = { 
+			name = fixed_pattern
+			value = scope:emblem
+		}
+	}
+}
+increase_fixed_color_pattern_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_pattern_0 < 6
+			}
+			change_variable = { 
+				name = fixed_color_pattern_0
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_pattern_0
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_pattern_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_pattern_0 > 0
+			}
+			change_variable = { 
+				name = fixed_color_pattern_0
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_pattern_0
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_pattern_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_pattern_1 < 6
+			}
+			change_variable = { 
+				name = fixed_color_pattern_1
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_pattern_1
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_pattern_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_pattern_1 > 0
+			}
+			change_variable = { 
+				name = fixed_color_pattern_1
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_pattern_1
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_pattern_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_pattern_2 < 6
+			}
+			change_variable = { 
+				name = fixed_color_pattern_2
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_pattern_2
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_pattern_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_pattern_2 > 0
+			}
+			change_variable = { 
+				name = fixed_color_pattern_2
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_pattern_2
+				value = 6
+			}
+		}
+	}
+}
+select_emblem_0 = { 
+	scope = culture
+	saved_scopes = { emblem}
+	effect = { 
+		set_variable = { 
+			name = fixed_emblem_0
+			value = scope:emblem
+		}
+	}
+}
+increase_fixed_color_0_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_0_0 < 6
+			}
+			change_variable = { 
+				name = fixed_color_0_0
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_0_0
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_0_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_0_0 > 0
+			}
+			change_variable = { 
+				name = fixed_color_0_0
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_0_0
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_0_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_0_1 < 6
+			}
+			change_variable = { 
+				name = fixed_color_0_1
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_0_1
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_0_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_0_1 > 0
+			}
+			change_variable = { 
+				name = fixed_color_0_1
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_0_1
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_0_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_0_2 < 6
+			}
+			change_variable = { 
+				name = fixed_color_0_2
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_0_2
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_0_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_0_2 > 0
+			}
+			change_variable = { 
+				name = fixed_color_0_2
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_0_2
+				value = 6
+			}
+		}
+	}
+}
+select_emblem_1 = { 
+	scope = culture
+	saved_scopes = { emblem}
+	effect = { 
+		set_variable = { 
+			name = fixed_emblem_1
+			value = scope:emblem
+		}
+	}
+}
+increase_fixed_color_1_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_1_0 < 6
+			}
+			change_variable = { 
+				name = fixed_color_1_0
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_1_0
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_1_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_1_0 > 0
+			}
+			change_variable = { 
+				name = fixed_color_1_0
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_1_0
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_1_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_1_1 < 6
+			}
+			change_variable = { 
+				name = fixed_color_1_1
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_1_1
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_1_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_1_1 > 0
+			}
+			change_variable = { 
+				name = fixed_color_1_1
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_1_1
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_1_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_1_2 < 6
+			}
+			change_variable = { 
+				name = fixed_color_1_2
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_1_2
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_1_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_1_2 > 0
+			}
+			change_variable = { 
+				name = fixed_color_1_2
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_1_2
+				value = 6
+			}
+		}
+	}
+}
+select_emblem_2 = { 
+	scope = culture
+	saved_scopes = { emblem}
+	effect = { 
+		set_variable = { 
+			name = fixed_emblem_2
+			value = scope:emblem
+		}
+	}
+}
+increase_fixed_color_2_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_2_0 < 6
+			}
+			change_variable = { 
+				name = fixed_color_2_0
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_2_0
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_2_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_2_0 > 0
+			}
+			change_variable = { 
+				name = fixed_color_2_0
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_2_0
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_2_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_2_1 < 6
+			}
+			change_variable = { 
+				name = fixed_color_2_1
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_2_1
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_2_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_2_1 > 0
+			}
+			change_variable = { 
+				name = fixed_color_2_1
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_2_1
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_2_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_2_2 < 6
+			}
+			change_variable = { 
+				name = fixed_color_2_2
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_2_2
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_2_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_2_2 > 0
+			}
+			change_variable = { 
+				name = fixed_color_2_2
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_2_2
+				value = 6
+			}
+		}
+	}
+}
+select_emblem_3 = { 
+	scope = culture
+	saved_scopes = { emblem}
+	effect = { 
+		set_variable = { 
+			name = fixed_emblem_3
+			value = scope:emblem
+		}
+	}
+}
+increase_fixed_color_3_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_3_0 < 6
+			}
+			change_variable = { 
+				name = fixed_color_3_0
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_3_0
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_3_0 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_3_0 > 0
+			}
+			change_variable = { 
+				name = fixed_color_3_0
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_3_0
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_3_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_3_1 < 6
+			}
+			change_variable = { 
+				name = fixed_color_3_1
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_3_1
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_3_1 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_3_1 > 0
+			}
+			change_variable = { 
+				name = fixed_color_3_1
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_3_1
+				value = 6
+			}
+		}
+	}
+}
+increase_fixed_color_3_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_3_2 < 6
+			}
+			change_variable = { 
+				name = fixed_color_3_2
+				add = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_3_2
+				value = 0
+			}
+		}
+	}
+}
+decrease_fixed_color_3_2 = { 
+	scope = culture
+	effect = { 
+		if = { 
+			limit = { 
+				var:fixed_color_3_2 > 0
+			}
+			change_variable = { 
+				name = fixed_color_3_2
+				subtract = 1
+			}
+		}
+		else = { 
+			set_variable = { 
+				name = fixed_color_3_2
+				value = 6
+			}
+		}
+	}
+}

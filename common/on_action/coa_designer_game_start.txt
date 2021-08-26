@@ -1,0 +1,4639 @@
+﻿on_game_start = { 
+	on_actions = { on_game_start_coa_editor}
+}
+on_game_start_coa_editor = { 
+	effect = { 
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_barruly_08
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_barruly_10
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_barruly_12
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_barruly_special
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_barry_04
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_barry_06
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_bend_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_bend_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_checkers_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_checkers_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_checkers_06
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_checkers_08
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_checkers_12
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_checkers_diagonal_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_chevron_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_chief
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_cross_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_cross_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_diagonal_split_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_diagonal_split_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_horizontal_bar_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_horizontal_split_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_horizontal_split_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_horizontal_stripes_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_quarter
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_shield_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_shield_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_shield_03_small
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_solid
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_stepped_pyramid
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_tricolor_bend_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_tricolor_bend_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_tricolor_horizontal_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_ttt
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_vertical_split_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_vertical_split_jagged_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_vertical_stripes_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_vertical_stripes_02
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:pattern_waves_01
+		}
+		add_to_global_variable_list = { 
+			name = all_patterns
+			target = flag:temp_pattern_bendy_special
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_aegishjalmr
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_asetena
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_bird
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_builder_god
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_ceremonial_mask
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_ceremonial_mask_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_circles
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_crescent_star
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_cross_adiukru
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_cross_ghana
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_cross_gur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_cross_jenne
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_cross_NU
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_cross_yoruba
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_duguwa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_dwennimmen
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_fern
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_flower
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_bg_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_bg_11
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_bg_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_bg_13
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_bg_14
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_frame_bg_15
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_fu_ti
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_gecko
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_habe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_hidoox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_igi_oye_tree
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_jaaniw
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_ja_ir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_kara
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_karaka
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_kile
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_knot_hausa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_koh
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_mako
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_matemasie
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_mende
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_mpuannum
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_mrammuo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_munun_ti
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_omnipotence
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_otumfuo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_chevrons_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_dancetty_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_lozengy_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_lozengy_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_lozengy_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_lozengy_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_triangles_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_triangles_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_triangles_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_undy
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_pattern_undy_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_ram_horns
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_ram_horns_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_snake
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_star_borgu
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_star_gurma
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_star_igbo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_star_toro
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_takrur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_tamfo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_turtle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_valor
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_venus
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_wawa_aba
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_african_yoruba_snake
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_anchor
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_angel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_annulet
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_annulet_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_annulet_cross_patty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_antelope
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_antler
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_antlers_attire
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_antler_pale
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arabic_allah
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arabic_allah_kufic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arabic_basmala_kufic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arabic_nazrid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arabic_shahada
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arewa_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arm_holding_sword
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arrow
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_arrows_saltire
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_attire
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_austras_koks
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_axe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_axe_long
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barbels_addorsed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barrulets_2
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barruly_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barruly_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barruly_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barry_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barry_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barry_indented
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_barry_undy
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bars_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bars_dancetty_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bars_embattled_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bars_embattled_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bars_gemel_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bear_claw
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bear_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bear_passant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bear_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bee
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bell
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendlet
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bends_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bends_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bends_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bends_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bends_crenelated_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendy_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendy_04_dimidiated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendy_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendy_06_dimidiated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendy_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bendy_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bend_checky
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bend_embattled
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bend_engrailed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bend_lozenges
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bend_potenty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bend_thin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_beta
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_billet
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_blank
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_block_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_block_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_block_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_block_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_block_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_boar_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_boar_passant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_boar_passant_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_boat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_boathooks
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bon_gammate_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_banner
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_circle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_circle_doted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_circle_fimbriated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_circle_metal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_nebuly
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_shield
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_shield_compony
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_shield_compony_invert
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_shield_engrailed_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_border_shield_engrailed_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bow
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bow_single
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_breeches
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_buddhist_fishes
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_buddhist_moon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bugle_horn_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bulls_massacre
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bull_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bull_horn
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bull_passant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bull_passant_humped
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_bull_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_caltrop
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_camel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_carbuncle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_castle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_castle_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chains
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chains_no_border
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chakratrisula
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chalice
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chalice_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chalice_mena
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chariot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_09
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_diagonal_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_diagonal_6x3
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checkers_diagonal_6x6
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checky_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checky_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_checky_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chevronny
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chevron_02_jagged
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chevron_in_chief
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chicots_saltire
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chief
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chief_indented
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chief_indented_alpha
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chief_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_chi_rho
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cinquefoil
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cinquefoil_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cinquefoil_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_circle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_circles_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_circle_mask
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_clam
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_clarion
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_clothes
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cloud_swirl_nestorian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cockerel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_conch_shell
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crancelin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent_bone
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent_bone_checkered
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent_mask
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent_mask_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crescent_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crossbow
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crosslet_fitchy
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_05_maltese
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_09
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_alcantara
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_armenian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_asturias
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_auseklis_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_auseklis_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_auseklis_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_auskelis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_bottony
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_coptic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_couped
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_crosslet
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_engrailed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_engrailed_large
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_faceted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_fleury
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_fretty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_greek
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_gringoly
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_large
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_maltese
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_moline
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_occitan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_patonce
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_patonce_vair
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_patriarchal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_patriarchal_hungary
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_patty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_pisan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_pommee
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_portugal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_potent
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_potenty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_potenty_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_scandinavian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_scandinavian_froso
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_cross_voided
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crown
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crown_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crown_lombard
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crown_papal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crown_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crown_small
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_crozier
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_demi_vol
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_desdichado
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dharmachakra
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dharmachakra_pagan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dharmachakra_satti
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_diagonal_stripes_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_diagonal_stripes_02_dual
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_diagonal_stripe_02_striped
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_diamond_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dolphin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_doted_roundel_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_double_bow_islamic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_double_bow_tamga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_double_tressure
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dragon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dragon_fylfot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dragon_urnes
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dragon_urnes_bejsebakken
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dragon_urnes_porsgrunn
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_dragon_urnes_trollaskogur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_duck
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_claw
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_crown
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_crown_boned
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_double
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_islamic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_islamic_double
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eagle_small
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eastern_clouds
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_eastern_sun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_elephant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_elephant_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_elephant_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_elephant_indian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_elephant_indian_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_empty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_endless_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_endless_knot_square
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ermine
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ermine_pattern
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ermine_spot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_escallop
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_escallop_vannet
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_escarbuncle_flory
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_escutcheon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_falcon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fess_betw_two_chevrons
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fess_checky
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fess_dancetty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fess_engrailed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fess_lozenges
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fire
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fish
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_flaming_jewel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fleece
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fleur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fleur_florence
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_flower
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fp1_jomsvikings
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_doted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_double
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_double_knots
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_double_knots_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_double_knots_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_single
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_single_knots
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_borre_single_knots_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_broa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_urnes_pitney
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frame_circle_urnes_runes
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fretty
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fret_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_frog
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fur_potent_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_fur_vair_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gankyil_chakra
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ginfaxi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ginnir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gironny_03_rotated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gironny_08_rotated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gironny_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gironny_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_globus_cruciger
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_goat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gonfanon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gotland_banner
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gotland_spiral
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_grain
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_grape_tree
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_greyhound_courant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_griffin_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_griffin_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_gyronny_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hamades_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hand
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hannunvaakuna
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_harp
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hausa_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hausa_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_heart
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hedgehog
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hexagram_khazaria
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hexagram_khazaria_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hindu_gammate_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hive
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horizontal_stripes_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horizontal_stripes_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horizontal_stripes_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horizontal_stripes_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horn
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horsebrays
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horse_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horse_shoe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_horse_statant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hound
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_hound_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_humped_bull
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_doted_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_doted_frame_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_arched_hill
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_chakra
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_crescent
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_dagger
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_dagger_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_gammate_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_lotus
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_nandipada
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_trisula
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_india_small_ujjain
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_inescutcheon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_irminsul
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_islamic_key
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_islamic_lis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_jerusalem
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_kanaga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_kaupaloki
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_key
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_keys
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_keys_crossed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_keys_st_peter_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_key_st_peter
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_knight
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_label_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_label_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_label_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_label_castles
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_label_compony
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_label_roundely
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_laurels
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_leopard_passant_guardant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_a
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_alpha
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_b
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_c
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_d
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_e
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_f
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_g
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_h
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_i
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_j
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_k
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_l
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_m
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_n
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_o
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_omega
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_p
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_q
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_r
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_s
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_t
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_u
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_v
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_w
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_x
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_y
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_letter_z
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_guardant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_passant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_passant_guardant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_passant_random
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_passant_small
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_passant_sword
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_pillar_india
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_axe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_crown
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_crown_forked
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_crown_sword
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_forked
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_holding_sword
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_per_pale
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_regardant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_rampant_small
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lion_saint_mark
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lobster
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lotus
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lotus_big
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lotus_flower
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lozenge
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lozenge_vair
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lozengy
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_lozengy_bend
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mace
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_manx_triskele
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_manx_triskele_armored
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_martlet
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mascle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mascle_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_maunch
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_axe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_axe_fess
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_bend
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_ceremonial_sword
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_chalice_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_chalice_axe_penbox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_chalice_khanja
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_chalice_penbox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_crescent
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_crescent_outline
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_diamond_napkin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_double_bow
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_fess
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_horn
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_key_pale
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_khanja
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_lamp
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_lion
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_pale
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_polo_stick
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_rosette
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mena_sun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_menorah
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mjolnir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_molette
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mongol_flame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_moon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_moon_flame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_moon_india
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_moon_sun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_moors_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_moors_head_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mount
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_mount_fleurdelisé
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_bird
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_cross_birds
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_cross_lotus
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_gammate_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_tamgha_chalice
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_tamgha_cross_hill
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nestorian_tamgha_trinity
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_nettle_leaf
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_bird_alstad
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_fenrir_tullstorp
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_frame_urnes
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_gungnir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_longship
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_longship_figureheads
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_longship_gotland
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_longship_gotland_shields
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_longship_shields
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_mjolnir_kobelev
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_mjolnir_odeshog
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_mjolnir_romersdal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_mjolnir_skane
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_odins_raven
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_odroerir_lillbjars
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_odroerir_snoldelev
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_raven
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_spirals
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_spiral_06_thin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_sun_cross_getinge
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triquetra
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triquetra_funbo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triquetra_hardrada
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triquetra_ivaring
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triskele_beasts
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triskele_boars
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triskele_ravens
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_triskele_snakes
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_norse_walknut_stora_hammars
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_oak_leaf
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ocean_castle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_octogon_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_octogon_plain_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_odins_face
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_odins_mask
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_oghuz_ram_horn_tamgha
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_orb
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_bars_2
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_bend_dexter_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_bend_sinister_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_canton
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_chevron_2
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_chevron_3
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_chevron_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_cross_3
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_cross_4
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_cross_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_cross_thin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_cross_thinnest
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_fess_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pales_4
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pales_4_thin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pale_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pall_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_01_inverted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_02_inverted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_03_inverted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pile_inverted
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pily_horizontal_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_pily_vertical_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordinary_saltire_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ordroerir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_orle
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_owl
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_circle_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_circle_frame_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_arrows
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_arrows_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_arrows_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_dhata
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_losen
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_mara
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_ognevitsa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_svarog
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_svarog_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_tursas
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_tursas_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_yarovik
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_cross_yarovrat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_dazbog
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_dodola
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_endless_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_endless_knot_square
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_gironny_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_hands_svarog
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_hors
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_jumis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_kolovrat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_kolovrat_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_laima
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_looped_knot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_moon_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_nemiza
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_perun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_rod
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_rose
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_saltire_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_saltire_cross_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_saule
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_spiral_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_spiral_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_spiral_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_star_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_star_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_svarga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_tamga_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_tamga_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_tamga_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_thunder_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_usins
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_usins_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_vehmic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_wheel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_wolf_triskel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pagan_wotan_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pales_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pales_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pales_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pales_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pales_undy_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_palm_tree
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_paly_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_paly_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_paly_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_paly_undy
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_panther
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_paradox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_parasol
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pattern_vertical_split_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_peacock
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_peacock_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_peacock_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_penbox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_persian_sun_lion
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_per_bend
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_per_bend_nebuly
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_per_fess
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_per_fess_indented
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_per_saltire
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_piles_conjoined
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pile_inverted_dimidiated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pile_mask
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pile_mask_thin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pillar_liege
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pily_barry
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_points_09
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_points_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_abdank
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_ajsicz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_andrzejewski
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_bialozor
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_bogoria
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_brama
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_brodzic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_brzuska
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_chrynicki
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_czyz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_glinskyi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_gozdawa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_komar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_korczak
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_kosciesza
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_leliwa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_odrovons
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_ogonczyk
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_orda
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_ostoja
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_ostrogski
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_paluki
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_pilsudski
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_potocki
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_prus
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_radwan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_roch
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_siekierz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_sreniawa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_syrykomla
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_szeliga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_trzywdar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polish_wisniowiecki
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polo_sticks
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polylobe_angles
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polylobe_circle_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polylobe_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_polylobe_plain_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pomegranate
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_portcullis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_pot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_quadrilobe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_quarterly
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ragged_staff
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rake
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ram_horn
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_african_roog_sene
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_akanism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_armenian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_bogomilist
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_bon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_buddhism_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_cathar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_christianity_catholic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_christianity_coptic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_christianity_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_christianity_nestorian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_christianity_orthodox
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_1
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_2
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_3
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_4
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_5
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_6
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_7
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_8
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_custom_faith_9
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_druze
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_dualism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_hinduism_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_iconoclasm
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_islam_asharism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_islam_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_islam_iibadi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_islam_ismailism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_jain_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_judaism_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_kushism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_lollard
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_magyar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_manichean
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_melieism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_messalian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_generic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_germanic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_hellenic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_romuva
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_slavic
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_suomenusko
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_tengri
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_westafrican
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_pagan_zunist
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_paulicanism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_rrmeaism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_sedism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_taoism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_vodun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_waaqism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_waldensian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_west_african_bori
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_yazidism
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_yoruba
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_religion_zoroastrianism_generic_faravahar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rising_sun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rook
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rosetta_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rosetta_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rosetta_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_algiz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_ehwaz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_ar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_bjarkan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_fe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_hagall
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_kaun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_logr
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_madr
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_naudr
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_oss
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_reid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_sol
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_thurs
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_tyr
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_ur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_futhark_yr
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_hagal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_hagalaz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_laguz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_mannaz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_nauthiz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_odal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_sowulo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_tiwaz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rune_wunjo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_runic_circle_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rurikid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rurikid_izyaslav
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rurikid_vzevolod_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_rurikid_vzevolod_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sabre
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sabres
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_salms_addorsed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_scales
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_shamrock
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sheep
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_shield_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_shield_portugal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ship_longship
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ship_longships
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ship_lymphad
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ship_mast
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_shrivatsa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_shrub
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_simargl
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sleipnir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_snake
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_snake_fylfot
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_snake_witch
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_solar_cross
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_solomon_star_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_solomon_star_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_spearhead
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_spirals_03_rotated
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_square_kaaba
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_squirrel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_stag
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_05_pierced
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_06_pierced
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_16
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_hexagram
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_ibadi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_ishtar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_khwarezmshah
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_sassanian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_star_shamash
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_stripes_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_stripes_horizontal_15
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_stripes_horizontal_21
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sun_india
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sun_shield
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_kazym
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_kondair
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_moon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_sun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_sun_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_sun_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_sun_moon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_suomenusko_udmurt
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_swan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_swords_crossed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_sword_simple
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamga_bayandur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamga_gediminas
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamga_iwa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamga_kayi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamga_kinik
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_aarlud
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_abak
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_adlari
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_ahmat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_ahurhay
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_altunopa
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_artabanos
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_ay
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_ayni
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_barga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_baruun
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_basiyat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_batpaktan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_baycora
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_baytis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_botas
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_buduyan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_burtasid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_carasdi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_catal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_chagatayid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_doted_circle_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_dulo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_enisey
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_han
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_hasam
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_hormizd
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_iki
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_imek
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_jaziqjurgis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_karabas
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_karagas
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_karasorkaliq
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_karimsavhal
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_khazar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_khori
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_khori_tumed
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_kireyt
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_koktayklan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_kucuk
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_kyrgyz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_laktanid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_magyar_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_magyar_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_makas
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mangit
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mergid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_09
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_11
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_13
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_14
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_15
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_16
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_17
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_18
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_19
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_20
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_21
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_22
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_23
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_batu
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_berke
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_chagatai
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_chapar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_guyuk
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_guyuk_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_kaidu
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_khalil
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_kuchuk
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_mengu_timur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_ogedei
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_ogedei_bow
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_pulad
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_talabuga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_toqta
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_mongol_ulugh
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_navruz
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_nestorian_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_nestorian_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_afsar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_alayuntlu
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_bayandur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_bayindir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_becenek
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_begtili
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_cavuldur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_dodurga
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_eymur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_iwe
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_karkin
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_kayig
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_kinik
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_kizik
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_salur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_yaparli
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_yazgir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oghuz_yazir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_oirat
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_orusbi
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_ozaruk
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_regular_circle_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_roundel_frame
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sarkel_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sarkel_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sarkel_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sarkel_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sarkel_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sarkel_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_sassan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_seyit
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_shapur
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_shapur_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_shor
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_somis
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_tel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_thocomer
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_togan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_togskol
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_tram
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_09
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_11
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_12
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_13
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_14
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_15
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_16
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_17
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_turkic_18
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_tuva
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_wanyan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_05
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_06
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_07
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_09
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tamgha_zoroastrian_10
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_three_bezants
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_three_jewels
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_thunder_dragon
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tibetan_aum
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tiger
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tiger_rampant
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tower
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tower_and_wall
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tree
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_trefoil_eretnid
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_triangle_mask
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_trident
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_triskel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_triskelion
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_triskel_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_triskel_iron
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_triskel_sassanian
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_tursansydan
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ukkokirves
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_ukkos_hammer
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_unicorn
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vairy
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vair_pattern
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vair_single
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vegvisir
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vertical_stripes_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vertical_stripes_08
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_verticle_stripes_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_vol
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_walknut
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_waterlily
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_waterlily_angria
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_waves_01
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_waves_02
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_waves_03
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_waves_04
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wheel
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wildman
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_winged_arrow
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wings
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wolf
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wolf_head
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wyvern
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_wyvern_rising
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_yggdrasil
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_yggdrasil_ockelbo
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_zoroastrian_fire_altar
+		}
+		add_to_global_variable_list = { 
+			name = all_emblems
+			target = flag:ce_zulfiqar
+		}
+	}
+}

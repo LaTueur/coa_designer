@@ -1,0 +1,20 @@
+﻿^^patterns^
+    texticon = { 
+        icon = icon_&patterns&
+        iconsize = {
+            texture = "gfx/coat_of_arms/patterns/&patterns&.dds"
+            size = { 128 128 }
+            fontsize = 16
+        }
+    }
+^
+^^emblems^
+    texticon = { 
+        icon = icon_&emblems&
+        iconsize = {
+            texture = "gfx/coat_of_arms/colored_emblems/&emblems&.dds"
+            size = { 128 128 }
+            fontsize = 16
+        }
+    }
+^

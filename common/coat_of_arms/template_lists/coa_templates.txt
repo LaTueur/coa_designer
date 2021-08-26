@@ -9,7 +9,38 @@ coat_of_arms_template_lists = {
 			trigger = {
 				exists = scope:culture.var:fixed_coa
 			}
-			100 = fixed_coa
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 0
+					}
+				}
+				100 = fixed_template_0
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 1
+					}
+				}
+				100 = fixed_template_1
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 2
+					}
+				}
+				100 = fixed_template_2
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 3
+					}
+				}
+				100 = fixed_template_3
+			}
 		}
 		special_selection = {
 			trigger = {

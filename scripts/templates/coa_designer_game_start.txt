@@ -1,0 +1,21 @@
+on_game_start = {
+    on_actions = {
+        on_game_start_coa_editor
+    }
+}
+on_game_start_coa_editor = {
+    effect = {
+        ^^patterns^
+            add_to_global_variable_list = {
+                name = all_patterns
+                target = flag:&patterns&
+            }
+        ^
+        ^^emblems^
+            add_to_global_variable_list = {
+                name = all_emblems
+                target = flag:&emblems&
+            }
+        ^
+    }
+}
