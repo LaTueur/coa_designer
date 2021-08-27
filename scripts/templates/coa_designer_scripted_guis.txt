@@ -4,43 +4,44 @@ initialize_fixed_coa = {
 		initialize_fixed_coa = yes
 	}
 }
-increase_fixed_template = { 
+change_fixed_template = { 
 	scope = culture
+    saved_scopes = {
+        decrease
+    }
 	effect = { 
 		if = { 
 			limit = { 
-				var:fixed_template < 3
-			}
-			change_variable = { 
-				name = fixed_template
-				add = 1
-			}
-		}
-		else = { 
-			set_variable = { 
-				name = fixed_template
-				value = 0
-			}
-		}
-	}
-}
-decrease_fixed_template = { 
-	scope = culture
-	effect = { 
-		if = { 
-			limit = { 
-				var:fixed_template > 0
+				scope:decrease = yes
 			}
 			change_variable = { 
 				name = fixed_template
 				subtract = 1
 			}
+            if = {
+                limit = {
+                    var:fixed_template < 0
+                }
+                set_variable = { 
+                    name = fixed_template
+                    value = max_fixed_template
+                }
+            }
 		}
 		else = { 
-			set_variable = { 
+			change_variable = { 
 				name = fixed_template
-				value = 3
+				add = 1
 			}
+            if = {
+                limit = {
+                    var:fixed_template > max_fixed_template
+                }
+                set_variable = { 
+                    name = fixed_template
+                    value = 0
+                }
+            }
 		}
 	}
 }
@@ -54,33 +55,45 @@ select_pattern = {
     }
 }
 ^^color_types^
-    increase_fixed_color_pattern_&color_types.id& = {
+    change_fixed_color_pattern_&color_types.id& = {
         scope = culture
-        
-        effect = {
-            if = {
-                limit = {
-                    var:fixed_color_pattern_&color_types.id& < 6
-                }
-                change_variable = { name = fixed_color_pattern_&color_types.id& add = 1 }
-            }
-            else = {
-                set_variable = { name = fixed_color_pattern_&color_types.id& value = 0 }
-            }
+        saved_scopes = {
+            decrease
         }
-    }
-    decrease_fixed_color_pattern_&color_types.id& = {
-        scope = culture
-        
-        effect = {
-            if = {
-                limit = {
-                    var:fixed_color_pattern_&color_types.id& > 0
+
+        effect = { 
+            if = { 
+                limit = { 
+                    scope:decrease = yes
                 }
-                change_variable = { name = fixed_color_pattern_&color_types.id& subtract = 1 }
+                change_variable = { 
+                    name = fixed_color_pattern_&color_types.id&
+                    subtract = 1
+                }
+                if = {
+                    limit = {
+                        var:fixed_color_pattern_&color_types.id& < 0
+                    }
+                    set_variable = { 
+                        name = fixed_color_pattern_&color_types.id&
+                        value = max_fixed_template
+                    }
+                }
             }
-            else = {
-                set_variable = { name = fixed_color_pattern_&color_types.id& value = 6 }
+            else = { 
+                change_variable = { 
+                    name = fixed_color_pattern_&color_types.id&
+                    add = 1
+                }
+                if = {
+                    limit = {
+                        var:fixed_color_pattern_&color_types.id& > max_fixed_color
+                    }
+                    set_variable = { 
+                        name = fixed_color_pattern_&color_types.id&
+                        value = 0
+                    }
+                }
             }
         }
     }
@@ -91,38 +104,56 @@ select_pattern = {
         saved_scopes = {
             emblem
         }
+        is_valid = {
+            var:fixed_template > fixed_emblem_&emblem_types.id&_needed
+        }
+        is_shown = {
+		    var:fixed_emblem_&emblem_types.id& = scope:emblem
+        }
         effect = {
             set_variable = { name = fixed_emblem_&emblem_types.id& value = scope:emblem }
         }
     }
     ^^color_types^
-        increase_fixed_color_&emblem_types.id&_&color_types.id& = {
+        change_fixed_color_&emblem_types.id&_&color_types.id& = {
             scope = culture
-            
-            effect = {
-                if = {
-                    limit = {
-                        var:fixed_color_&emblem_types.id&_&color_types.id& < 6
-                    }
-                    change_variable = { name = fixed_color_&emblem_types.id&_&color_types.id& add = 1 }
-                }
-                else = {
-                    set_variable = { name = fixed_color_&emblem_types.id&_&color_types.id& value = 0 }
-                }
+            saved_scopes = {
+                decrease
             }
-        }
-        decrease_fixed_color_&emblem_types.id&_&color_types.id& = {
-            scope = culture
-            
-            effect = {
-                if = {
-                    limit = {
-                        var:fixed_color_&emblem_types.id&_&color_types.id& > 0
+
+            effect = { 
+                if = { 
+                    limit = { 
+                        scope:decrease = yes
                     }
-                    change_variable = { name = fixed_color_&emblem_types.id&_&color_types.id& subtract = 1 }
+                    change_variable = { 
+                        name = fixed_color_&emblem_types.id&_&color_types.id&
+                        subtract = 1
+                    }
+                    if = {
+                        limit = {
+                            var:fixed_color_&emblem_types.id&_&color_types.id& < 0
+                        }
+                        set_variable = { 
+                            name = fixed_color_&emblem_types.id&_&color_types.id&
+                            value = max_fixed_template
+                        }
+                    }
                 }
-                else = {
-                    set_variable = { name = fixed_color_&emblem_types.id&_&color_types.id& value = 6 }
+                else = { 
+                    change_variable = { 
+                        name = fixed_color_&emblem_types.id&_&color_types.id&
+                        add = 1
+                    }
+                    if = {
+                        limit = {
+                            var:fixed_color_&emblem_types.id&_&color_types.id& > max_fixed_color
+                        }
+                        set_variable = { 
+                            name = fixed_color_&emblem_types.id&_&color_types.id&
+                            value = 0
+                        }
+                    }
                 }
             }
         }

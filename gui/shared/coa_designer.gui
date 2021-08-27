@@ -1,50 +1,44 @@
 types CoaDesignerTypes {
     type emblem_list = dynamicgridbox { # Create visuals for a list like in the main artifact window
         ignoreinvisible = yes
-        maxhorizontalslots = 3
         maxverticalslots = 1000
         flipdirection = yes
-        datamodel_wrap = 3
+        block "width"{
+            datamodel_wrap = 4
+            maxhorizontalslots = 4
+        }
         layoutpolicy_vertical = expanding
         layoutpolicy_horizontal = expanding
-        min_width = 192
-        max_width = 192
         position = {0 0}
-        name = "artifact_all"
         block "datamodel" {
             datamodel = "[GetGlobalList('all_emblems')]"
         }
         item = {
             button = {
-                block "size" {
-                    size = { 64 64 }
-                }
+                size = { 64 64 }
                 # Tooltip shows modifier description, useful for modifiers that affect a lot of different stats.
-                block "visibility" {}
                 block "itemcontext" {datacontext = "[GetScriptedGui('select_emblem_0')]"}
-                onclick = "[GetVariableSystem.Toggle(Scope.GetFlagName)]"
                 onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('emblem', MakeScopeFlag(Scope.GetFlagName)).End)]"
                 state = {
                     name = _mouse_click
                     delay = 0.001
                     on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
                 }
-                hbox = {
-                    widget = {
-                        size = { 64 64 }
-                        alwaystransparent = yes
-                        text_single = {
-                            text = "[Concatenate(Concatenate('@icon_',Scope.GetFlagName), '!')]"
-                            size = { 64 64 }
-                            fontsize = 8
-                            fontsize_min = 7
-                            parentanchor = center
-                        }
-                        background = {
-                            using = Background_Area_Solid
-                            margin = { 0 0 }
-                        }
-                    }
+                text_single = {
+                    text = "[Concatenate(Concatenate('@icon_',Scope.GetFlagName), '!')]"
+                    size = { 100% 100% }
+                    fontsize = 8
+                    fontsize_min = 7
+                    parentanchor = center
+                }
+                background = {
+                    using = Background_Area_Solid
+                    margin = { 0 0 }
+                }
+                background = {
+                    using = Background_Area_Light
+                    visible = "[ScriptedGui.IsShown(GuiScope.SetRoot(Culture.MakeScope).AddScope('emblem', MakeScopeFlag(Scope.GetFlagName)).End)]"
+                    margin = { 0 0 }
                 }
             }
         }
@@ -82,12 +76,12 @@ types CoaDesignerTypes {
 	}
     type coa_designer_arrows = hbox
     {
+        block "change_sgui" {
+            datacontext = "[GetScriptedGui( 'change_fixed_template' )]"
+        }
         button_select_arrow = {
             mirror = horizontal
-            block "decrease_datacontext" {
-                datacontext = "[GetScriptedGui( 'decrease_fixed_pattern' )]"
-            }
-            onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+            onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('decrease',MakeScopeBool('(bool)yes')).End)]"
             state = {
                 name = _mouse_click
                 delay = 0.001
@@ -98,7 +92,7 @@ types CoaDesignerTypes {
             block "increase_datacontext" {
                 datacontext = "[GetScriptedGui( 'increase_fixed_pattern' )]"
             }
-            onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+            onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('decrease',MakeScopeBool('(bool)no')).End)]"
             state = {
                 name = _mouse_click
                 delay = 0.001
@@ -116,20 +110,12 @@ types CoaDesignerTypes {
         size = { 100% 100% }
 
         datacontext = "[RulerDesignerWindow.GetCulture]"
-        state = {
-            name = _show
-            datacontext = "[GetScriptedGui( 'initialize_fixed_coa' )]"
-            on_start = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-        }
 
         using =  Animation_Tab_Switch
         vbox = {
             coa_designer_arrows = {
-                blockoverride "decrease_datacontext"{
-                    datacontext = "[GetScriptedGui( 'decrease_fixed_template' )]"
-                }
-                blockoverride "increase_datacontext"{
-                    datacontext = "[GetScriptedGui( 'increase_fixed_template' )]"
+                blockoverride "change_sgui"{
+                    datacontext = "[GetScriptedGui( 'change_fixed_template' )]"
                 }
             }
             coa_dynasty_coa_designer = {
@@ -142,133 +128,52 @@ types CoaDesignerTypes {
                     alwaystransparent = yes
                 }
             }
+            expand = {}
+            hbox = {
+                layoutpolicy_horizontal = expanding
+                button_standard_back = {
+                    onclick = "[VariableSystem.Clear( 'coa_customization_open' )]"
+                    shortcut = "close_window"
+
+                    blockoverride "text"
+                    {
+                        text = "BACK_LABEL"
+                    }
+                }
+            }
         }
         emblem_column = {
             blockoverride "datamodel" { datamodel = "[GetGlobalList('all_patterns')]" }
             blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_pattern')]" }
         }
-        emblem_column = {
-            blockoverride "decrease_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_0_0' )]"
-            }
-            blockoverride "increase_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_0_0' )]"
-            }
-            blockoverride "decrease_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_0_1' )]"
-            }
-            blockoverride "increase_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_0_1' )]"
-            }
-            blockoverride "decrease_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_0_2' )]"
-            }
-            blockoverride "increase_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_0_2' )]"
-            }
-            blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_0')]" }
-        }
-        emblem_column = {
-            blockoverride "decrease_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_1_0' )]"
-            }
-            blockoverride "increase_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_1_0' )]"
-            }
-            blockoverride "decrease_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_1_1' )]"
-            }
-            blockoverride "increase_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_1_1' )]"
-            }
-            blockoverride "decrease_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_1_2' )]"
-            }
-            blockoverride "increase_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_1_2' )]"
-            }
-            blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_1')]" }
-        }
-        emblem_column = {
-            blockoverride "decrease_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_2_0' )]"
-            }
-            blockoverride "increase_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_2_0' )]"
-            }
-            blockoverride "decrease_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_2_1' )]"
-            }
-            blockoverride "increase_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_2_1' )]"
-            }
-            blockoverride "decrease_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_2_2' )]"
-            }
-            blockoverride "increase_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_2_2' )]"
-            }
-            blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_2')]" }
-        }
-        emblem_column = {
-            blockoverride "decrease_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_3_0' )]"
-            }
-            blockoverride "increase_datacontext_0"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_3_0' )]"
-            }
-            blockoverride "decrease_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_3_1' )]"
-            }
-            blockoverride "increase_datacontext_1"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_3_1' )]"
-            }
-            blockoverride "decrease_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'decrease_fixed_color_3_2' )]"
-            }
-            blockoverride "increase_datacontext_2"{
-                datacontext = "[GetScriptedGui( 'increase_fixed_color_3_2' )]"
-            }
-            blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_0')]" }
-        }
+        emblem_column_0 = {}
+        emblem_column_1 = {}
+        emblem_column_2 = {}
+        emblem_column_3 = {}
     }
     type emblem_column = vbox
     {
         layoutpolicy_horizontal = expanding
         layoutpolicy_vertical = expanding
+        block "visibility"{}
         coa_designer_arrows = {
-            blockoverride "decrease_datacontext"{
-                block "decrease_datacontext_0" {
-                    datacontext = "[GetScriptedGui( 'decrease_fixed_color_pattern_0' )]"
-                }
-            }
-            blockoverride "increase_datacontext"{
-                block "increase_datacontext_0" {
-                    datacontext = "[GetScriptedGui( 'increase_fixed_color_pattern_0' )]"
+            blockoverride "change_sgui"{
+                block "change_sgui_0"{
+                    datacontext = "[GetScriptedGui( 'change_fixed_color_pattern_0' )]"
                 }
             }
         }
         coa_designer_arrows = {
-            blockoverride "decrease_datacontext"{
-                block "decrease_datacontext_1" {
-                    datacontext = "[GetScriptedGui( 'decrease_fixed_color_pattern_1' )]"
-                }
-            }
-            blockoverride "increase_datacontext"{
-                block "increase_datacontext_1" {
-                    datacontext = "[GetScriptedGui( 'increase_fixed_color_pattern_1' )]"
+            blockoverride "change_sgui"{
+                block "change_sgui_1"{
+                    datacontext = "[GetScriptedGui( 'change_fixed_color_pattern_1' )]"
                 }
             }
         }
         coa_designer_arrows = {
-            blockoverride "decrease_datacontext"{
-                block "decrease_datacontext_2" {
-                    datacontext = "[GetScriptedGui( 'decrease_fixed_color_pattern_2' )]"
-                }
-            }
-            blockoverride "increase_datacontext"{
-                block "increase_datacontext_2" {
-                    datacontext = "[GetScriptedGui( 'increase_fixed_color_pattern_2' )]"
+            blockoverride "change_sgui"{
+                block "change_sgui_2"{
+                    datacontext = "[GetScriptedGui( 'change_fixed_color_pattern_2' )]"
                 }
             }
         }
@@ -277,19 +182,86 @@ types CoaDesignerTypes {
             layoutpolicy_vertical = expanding
             blockoverride "scrollbox_content"
             {
-                emblem_list = {
-                    blockoverride "datamodel" {
-                        block "datamodel" {
-                            datamodel = "[GetGlobalList('all_emblems')]"
-                        }
-                    }
-                    blockoverride "itemcontext" {
-                        block "itemcontext" {
-                            datacontext = "[GetScriptedGui('select_emblem_0')]"
-                        }
-                    }
-                }
+                emblem_list = {}
             }
         }
+    }
+    type coa_customizer_opener = button_randomize
+    {
+        datacontext = "[GetScriptedGui('initialize_fixed_coa')]"
+        datacontext = "[RulerDesignerWindow.GetCulture]"
+        onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        state = {
+            name = _mouse_click
+            delay = 0.001
+            on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+        }
+        onclick = "[VariableSystem.Toggle( 'coa_customization_open' )]"
+        tooltip = RULER_DESIGNER_RANDOMIZE_DYNASTY_COA
+        using = tooltip_se
+    }
+    type emblem_column_0 = emblem_column {
+        blockoverride "visibility"{
+            datacontext = "[GetScriptedGui( 'select_emblem_0' )]"
+            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End )]"
+        }
+        blockoverride "change_sgui_0"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_0_0' )]"
+        }
+        blockoverride "change_sgui_1"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_0_1' )]"
+        }
+        blockoverride "change_sgui_2"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_0_2' )]"
+        }
+        blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_0')]" }
+    }
+    type emblem_column_1 = emblem_column {
+        blockoverride "visibility"{
+            datacontext = "[GetScriptedGui( 'select_emblem_1' )]"
+            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        }
+        blockoverride "change_sgui_0"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_1_0' )]"
+        }
+        blockoverride "change_sgui_1"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_1_1' )]"
+        }
+        blockoverride "change_sgui_2"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_1_2' )]"
+        }
+        blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_1')]" }
+    }
+    type emblem_column_2 = emblem_column {
+        blockoverride "visibility"{
+            datacontext = "[GetScriptedGui( 'select_emblem_2' )]"
+            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        }
+        blockoverride "change_sgui_0"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_2_0' )]"
+        }
+        blockoverride "change_sgui_1"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_2_1' )]"
+        }
+        blockoverride "change_sgui_2"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_2_2' )]"
+        }
+        blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_2')]" }
+    }
+    type emblem_column_3 = emblem_column {
+        blockoverride "visibility"{
+            datacontext = "[GetScriptedGui( 'select_emblem_3' )]"
+            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        }
+        blockoverride "change_sgui_0"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_3_0' )]"
+        }
+        blockoverride "change_sgui_1"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_3_1' )]"
+        }
+        blockoverride "change_sgui_2"{
+            datacontext = "[GetScriptedGui( 'change_fixed_color_3_2' )]"
+        }
+        blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_3')]" }
     }
 }

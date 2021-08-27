@@ -495,11 +495,7 @@ window = {
 											tooltip = RULER_DESIGNER_RANDOMIZE_DYNASTY_COA
 											using = tooltip_se
 										}
-										button_randomize = {
-											onclick = "[VariableSystem.Toggle( 'coa_customization_open' )]"
-											tooltip = RULER_DESIGNER_RANDOMIZE_DYNASTY_COA
-											using = tooltip_se
-										}
+										coa_customizer_opener = {}
 									}
 								}
 							}

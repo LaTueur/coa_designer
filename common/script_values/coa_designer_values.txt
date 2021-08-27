@@ -1,0 +1,6 @@
+max_fixed_template = 3
+max_fixed_color = 6
+fixed_emblem_0_needed = -1
+fixed_emblem_1_needed = 2
+fixed_emblem_2_needed = 2
+fixed_emblem_3_needed = 2
