@@ -23,6 +23,105 @@ template = {
 			color1 = list "fixed_color_0_0"
 			color2 = list "fixed_color_0_1"
 			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.5 0.5 }  scale = { 0.9 0.9 }  }
+		}
+	}
+	fixed_template_2 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.3 0.20 } scale = { 0.38 0.38 }  }
+			instance = { position = { 0.5 0.45 } scale = { 0.38 0.38 }  }	
+			instance = { position = { 0.7 0.70 } scale = { 0.38 0.38 }  }
+		}
+	}
+	fixed_template_3 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.320 0.210 } scale = { 0.42 0.42 }  }
+			instance = { position = { 0.680 0.210 } scale = { 0.42 0.42 }  }
+			instance = { position = { 0.500 0.790 } scale = { 0.42 0.42 }  }			
+		}
+	}
+	fixed_template_4 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.33 0.30 } rotation = -45 scale = { 0.45 0.45 }  }
+			instance = { position = { 0.67 0.30 } rotation = 45 scale = { 0.45 0.45 }  }
+			instance = { position = { 0.5 0.67 } scale = { 0.45 -0.45 }  }
+		}
+	}
+	fixed_template_5 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.500 0.210 } scale = { 0.24 0.25 }  }
+			instance = { position = { 0.735 0.500 } scale = { 0.25 0.24 }  }
+			instance = { position = { 0.265 0.500 } scale = { 0.25 0.24 }  }	
+			instance = { position = { 0.500 0.500 } scale = { 0.25 0.24 }  }
+			instance = { position = { 0.500 0.780 } scale = { 0.24 0.25 }  }		
+		}
+	}
+	fixed_template_6 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.5 0.22 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.5 0.78 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.26 0.22 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.74 0.22 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.37 0.50 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.63 0.50 } scale = { 0.33 0.33 }  }
+		}
+	}
+	fixed_template_7 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
 			instance = { position = { 0.10 0.00 } scale = { 0.20 0.20 }  }
 			instance = { position = { 0.30 0.00 } scale = { 0.20 0.20 }  }
 			instance = { position = { 0.50 0.00 } scale = { 0.20 0.20 }  }
@@ -58,7 +157,7 @@ template = {
 			instance = { position = { 1.00 1.00 } scale = { 0.20 0.20 }  }
 		}
 	}
-	fixed_template_2 = {
+	fixed_template_8 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -101,10 +200,10 @@ template = {
 			instance = { position = { 0.30 1.00 } scale = { 0.20 0.20 }  }
 			instance = { position = { 0.50 1.00 } scale = { 0.20 0.20 }  }
 			instance = { position = { 0.70 1.00 } scale = { 0.20 0.20 }  }
-			instance = { position = { 0.90 1.00 } scale = { 0.20 0.20 }  }					
+			instance = { position = { 0.90 1.00 } scale = { 0.20 0.20 }  }
 		}
 	}
-	fixed_template_3 = {
+	fixed_template_9 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -115,28 +214,475 @@ template = {
 			color1 = list "fixed_color_0_0"
 			color2 = list "fixed_color_0_1"
 			color3 = list "fixed_color_0_2"
-			instance = { position = { 0.25 0.25 }  scale = { 0.5 0.5 }  }					
+			instance = { position = { 0.25 0.5 }  scale = { 0.5 0.5 }  }
 		}
 		colored_emblem = {
 			texture = list "fixed_emblem_1"
 			color1 = list "fixed_color_1_0"
 			color2 = list "fixed_color_1_1"
 			color3 = list "fixed_color_1_2"
-			instance = { position = { 0.75 0.25 }  scale = { 0.5 0.5 }  }					
+			instance = { position = { 0.75 0.5 }  scale = { 0.5 0.5 }  }
+		}
+	}
+	fixed_template_10 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.5 0.25 }  scale = { 0.5 0.5 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.5 0.75 }  scale = { 0.5 0.5 }  }
+		}
+	}
+	fixed_template_11 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.3 0.20 } scale = { 0.38 0.38 }  }
+			instance = { position = { 0.5 0.45 } scale = { 0.38 0.38 }  }
+			instance = { position = { 0.7 0.70 } scale = { 0.38 0.38 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_12 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.320 0.210 } scale = { 0.42 0.42 }  }
+			instance = { position = { 0.680 0.210 } scale = { 0.42 0.42 }  }
+			instance = { position = { 0.500 0.790 } scale = { 0.42 0.42 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_13 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.33 0.30 } rotation = -45 scale = { 0.45 0.45 }  }
+			instance = { position = { 0.67 0.30 } rotation = 45 scale = { 0.45 0.45 }  }
+			instance = { position = { 0.5 0.67 } scale = { 0.45 -0.45 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_14 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.500 0.210 } scale = { 0.24 0.25 }  }
+			instance = { position = { 0.735 0.500 } scale = { 0.25 0.24 }  }
+			instance = { position = { 0.265 0.500 } scale = { 0.25 0.24 }  }	
+			instance = { position = { 0.500 0.500 } scale = { 0.25 0.24 }  }
+			instance = { position = { 0.500 0.780 } scale = { 0.24 0.25 }  }		
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_15 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.5 0.22 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.5 0.78 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.26 0.22 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.74 0.22 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.37 0.50 } scale = { 0.33 0.33 }  }	
+			instance = { position = { 0.63 0.50 } scale = { 0.33 0.33 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_16 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.10 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 1.00 } scale = { 0.20 0.20 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_17 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.00 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.20 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.40 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 0.60 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.00 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.20 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.40 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.60 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.80 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 1.00 0.80 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.10 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.30 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.50 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.70 1.00 } scale = { 0.20 0.20 }  }
+			instance = { position = { 0.90 1.00 } scale = { 0.20 0.20 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+		}
+	}
+	fixed_template_18 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.3 0.20 } scale = { 0.38 0.38 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.5 0.45 } scale = { 0.38 0.38 }  }
 		}
 		colored_emblem = {
 			texture = list "fixed_emblem_2"
 			color1 = list "fixed_color_2_0"
 			color2 = list "fixed_color_2_1"
 			color3 = list "fixed_color_2_2"
-			instance = { position = { 0.25 0.75 }  scale = { 0.5 0.5 }  }					
+			instance = { position = { 0.7 0.70 } scale = { 0.38 0.38 }  }
+		}
+	}
+	fixed_template_19 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.320 0.210 } scale = { 0.42 0.42 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.680 0.210 } scale = { 0.42 0.42 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_2"
+			color1 = list "fixed_color_2_0"
+			color2 = list "fixed_color_2_1"
+			color3 = list "fixed_color_2_2"
+			instance = { position = { 0.500 0.790 } scale = { 0.42 0.42 }  }
+		}
+	}
+	fixed_template_20 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.33 0.30 } rotation = -45 scale = { 0.45 0.45 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.67 0.30 } rotation = 45 scale = { 0.45 0.45 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_2"
+			color1 = list "fixed_color_2_0"
+			color2 = list "fixed_color_2_1"
+			color3 = list "fixed_color_2_2"
+			instance = { position = { 0.5 0.67 } scale = { 0.45 -0.45 }  }
+		}
+	}
+	fixed_template_21 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.25 0.25 }  scale = { 0.5 0.5 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.75 0.25 }  scale = { 0.5 0.5 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_2"
+			color1 = list "fixed_color_2_0"
+			color2 = list "fixed_color_2_1"
+			color3 = list "fixed_color_2_2"
+			instance = { position = { 0.25 0.75 }  scale = { 0.5 0.5 }  }
 		}
 		colored_emblem = {
 			texture = list "fixed_emblem_3"
 			color1 = list "fixed_color_3_0"
 			color2 = list "fixed_color_3_1"
 			color3 = list "fixed_color_3_2"
-			instance = { position = { 0.75 0.75 }  scale = { 0.5 0.5 }  }					
+			instance = { position = { 0.75 0.75 }  scale = { 0.5 0.5 }  }
+		}
+	}
+	fixed_template_22 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.3 0.20 } scale = { 0.38 0.38 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.5 0.45 } scale = { 0.38 0.38 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_2"
+			color1 = list "fixed_color_2_0"
+			color2 = list "fixed_color_2_1"
+			color3 = list "fixed_color_2_2"
+			instance = { position = { 0.7 0.70 } scale = { 0.38 0.38 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_3"
+			color1 = list "fixed_color_3_0"
+			color2 = list "fixed_color_3_1"
+			color3 = list "fixed_color_3_2"
+		}
+	}
+	fixed_template_23 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.320 0.210 } scale = { 0.42 0.42 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.680 0.210 } scale = { 0.42 0.42 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_2"
+			color1 = list "fixed_color_2_0"
+			color2 = list "fixed_color_2_1"
+			color3 = list "fixed_color_2_2"
+			instance = { position = { 0.500 0.790 } scale = { 0.42 0.42 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_3"
+			color1 = list "fixed_color_3_0"
+			color2 = list "fixed_color_3_1"
+			color3 = list "fixed_color_3_2"
+		}
+	}
+	fixed_template_24 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.33 0.30 } rotation = -45 scale = { 0.45 0.45 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.67 0.30 } rotation = 45 scale = { 0.45 0.45 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_2"
+			color1 = list "fixed_color_2_0"
+			color2 = list "fixed_color_2_1"
+			color3 = list "fixed_color_2_2"
+			instance = { position = { 0.5 0.67 } scale = { 0.45 -0.45 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_3"
+			color1 = list "fixed_color_3_0"
+			color2 = list "fixed_color_3_1"
+			color3 = list "fixed_color_3_2"
 		}
 	}
 }

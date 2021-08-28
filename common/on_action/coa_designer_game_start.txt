@@ -4637,3 +4637,13 @@ on_game_start_coa_editor = {
 		}
 	}
 }
+on_game_start_after_lobby = {
+	on_actions = { on_game_start_after_coa_editor}
+}
+on_game_start_after_coa_editor = {
+	effect = {
+		every_culture_global = {
+			remove_variable = fixed_coa
+		}
+	}
+}

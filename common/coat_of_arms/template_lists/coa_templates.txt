@@ -41,6 +41,174 @@ coat_of_arms_template_lists = {
 				}
 				100 = fixed_template_3
 			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 4
+					}
+				}
+				100 = fixed_template_4
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 5
+					}
+				}
+				100 = fixed_template_5
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 6
+					}
+				}
+				100 = fixed_template_6
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 7
+					}
+				}
+				100 = fixed_template_7
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 8
+					}
+				}
+				100 = fixed_template_8
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 9
+					}
+				}
+				100 = fixed_template_9
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 10
+					}
+				}
+				100 = fixed_template_10
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 11
+					}
+				}
+				100 = fixed_template_11
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 12
+					}
+				}
+				100 = fixed_template_12
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 13
+					}
+				}
+				100 = fixed_template_13
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 14
+					}
+				}
+				100 = fixed_template_14
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 15
+					}
+				}
+				100 = fixed_template_15
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 16
+					}
+				}
+				100 = fixed_template_16
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 17
+					}
+				}
+				100 = fixed_template_17
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 18
+					}
+				}
+				100 = fixed_template_18
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 19
+					}
+				}
+				100 = fixed_template_19
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 20
+					}
+				}
+				100 = fixed_template_20
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 21
+					}
+				}
+				100 = fixed_template_21
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 22
+					}
+				}
+				100 = fixed_template_22
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 23
+					}
+				}
+				100 = fixed_template_23
+			}
+			special_selection = {
+				trigger = {
+					scope:culture = { 
+						var:fixed_template = 24
+					}
+				}
+				100 = fixed_template_24
+			}
 		}
 		special_selection = {
 			trigger = {

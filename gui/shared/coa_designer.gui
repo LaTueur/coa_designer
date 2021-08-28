@@ -74,13 +74,21 @@ types CoaDesignerTypes {
 			}
 		}
 	}
-    type coa_designer_arrows = hbox
-    {
+    type coa_designer_arrows = widget {
+		size = { 200 30 }
+
+		background = {
+			using = Background_Area_Dark
+			margin = { 5 5 }
+		}
+
         block "change_sgui" {
             datacontext = "[GetScriptedGui( 'change_fixed_template' )]"
         }
         button_select_arrow = {
             mirror = horizontal
+			size = { 25 25 }
+			parentanchor = left|vcenter
             onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('decrease',MakeScopeBool('(bool)yes')).End)]"
             state = {
                 name = _mouse_click
@@ -88,10 +96,20 @@ types CoaDesignerTypes {
                 on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
             }
         }
+		text_single = {
+            block "arrow_label"{
+                text = "Cat at home"
+            }
+			parentanchor = center
+			default_format = "#medium"
+			align = nobaseline
+		}
         button_select_arrow = {
             block "increase_datacontext" {
                 datacontext = "[GetScriptedGui( 'increase_fixed_pattern' )]"
             }
+			size = { 25 25 }
+			parentanchor = right|vcenter
             onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('decrease',MakeScopeBool('(bool)no')).End)]"
             state = {
                 name = _mouse_click
@@ -99,7 +117,7 @@ types CoaDesignerTypes {
                 on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
             }
         }
-    }
+	}
     type coa_customizer_view = hbox
     {
         name = "coa_customizer_view"
@@ -113,9 +131,16 @@ types CoaDesignerTypes {
 
         using =  Animation_Tab_Switch
         vbox = {
+            layoutpolicy_horizontal = expanding
+            layoutpolicy_vertical = expanding
+            max_width = 350
+            expand = {}
             coa_designer_arrows = {
                 blockoverride "change_sgui"{
                     datacontext = "[GetScriptedGui( 'change_fixed_template' )]"
+                }
+                blockoverride "arrow_label"{
+                    text = "Template"
                 }
             }
             coa_dynasty_coa_designer = {
@@ -143,24 +168,93 @@ types CoaDesignerTypes {
             }
         }
         emblem_column = {
+            blockoverride "max_width" {
+                max_width = 350
+            }
             blockoverride "datamodel" { datamodel = "[GetGlobalList('all_patterns')]" }
             blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_pattern')]" }
+            blockoverride "column_header"{
+                text = "Pattern"
+            }
         }
-        emblem_column_0 = {}
-        emblem_column_1 = {}
-        emblem_column_2 = {}
-        emblem_column_3 = {}
+        emblem_column_0 = {
+            blockoverride "visibility"{
+                visible = "[Not(GetScriptedGui( 'select_emblem_1' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ))]"
+            }
+            blockoverride "width"{
+                datamodel_wrap = 13
+                maxhorizontalslots = 13
+            }
+        }
+        emblem_column_0 = {
+            blockoverride "visibility"{
+                visible = "[And(Not(GetScriptedGui( 'select_emblem_2' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End )), GetScriptedGui( 'select_emblem_1' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ))]"
+            }
+            blockoverride "width"{
+                datamodel_wrap = 6
+                maxhorizontalslots = 6
+            }
+        }
+        emblem_column_0 = {
+            blockoverride "visibility"{
+                visible = "[GetScriptedGui( 'select_emblem_2' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End )]"
+            }
+        }
+        emblem_column_1 = {
+            blockoverride "visibility"{
+                visible = "[And(Not(GetScriptedGui( 'select_emblem_2' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End )), GetScriptedGui( 'select_emblem_1' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ))]"
+            }
+            blockoverride "width"{
+                datamodel_wrap = 6
+                maxhorizontalslots = 6
+            }
+        }
+        emblem_column_1 = {
+            blockoverride "visibility"{
+                visible = "[GetScriptedGui( 'select_emblem_2' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End )]"
+            }
+        }
+        emblem_column_2 = {
+            blockoverride "visibility"{
+                visible = "[GetScriptedGui( 'select_emblem_2' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+            }
+        }
+        emblem_column_3 = {
+            blockoverride "visibility"{
+                visible = "[GetScriptedGui( 'select_emblem_3' ).IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+            }
+        }
     }
     type emblem_column = vbox
     {
         layoutpolicy_horizontal = expanding
         layoutpolicy_vertical = expanding
+        block "max_width" {}
+        widget = {
+            size = { 200 30 }
+    
+            background = {
+                using = Background_Area_Light
+                margin = { 5 5 }
+            }
+            text_single = {
+                block "column_header"{
+                    text = "Cat at home"
+                }
+                parentanchor = center
+                default_format = "#high"
+                align = nobaseline
+            }
+        }
         block "visibility"{}
         coa_designer_arrows = {
             blockoverride "change_sgui"{
                 block "change_sgui_0"{
                     datacontext = "[GetScriptedGui( 'change_fixed_color_pattern_0' )]"
                 }
+            }
+            blockoverride "arrow_label"{
+                text = "Color 1"
             }
         }
         coa_designer_arrows = {
@@ -169,12 +263,18 @@ types CoaDesignerTypes {
                     datacontext = "[GetScriptedGui( 'change_fixed_color_pattern_1' )]"
                 }
             }
+            blockoverride "arrow_label"{
+                text = "Color 2"
+            }
         }
         coa_designer_arrows = {
             blockoverride "change_sgui"{
                 block "change_sgui_2"{
                     datacontext = "[GetScriptedGui( 'change_fixed_color_pattern_2' )]"
                 }
+            }
+            blockoverride "arrow_label"{
+                text = "Color 3"
             }
         }
         scrollbox = {
@@ -186,7 +286,7 @@ types CoaDesignerTypes {
             }
         }
     }
-    type coa_customizer_opener = button_randomize
+    type coa_customizer_opener = button_edit_text
     {
         datacontext = "[GetScriptedGui('initialize_fixed_coa')]"
         datacontext = "[RulerDesignerWindow.GetCulture]"
@@ -197,13 +297,12 @@ types CoaDesignerTypes {
             on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
         }
         onclick = "[VariableSystem.Toggle( 'coa_customization_open' )]"
-        tooltip = RULER_DESIGNER_RANDOMIZE_DYNASTY_COA
+        tooltip = "#T Edit Coat of Arms#!"
         using = tooltip_se
     }
     type emblem_column_0 = emblem_column {
-        blockoverride "visibility"{
-            datacontext = "[GetScriptedGui( 'select_emblem_0' )]"
-            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End )]"
+        blockoverride "column_header"{
+            text = "Emblem 1"
         }
         blockoverride "change_sgui_0"{
             datacontext = "[GetScriptedGui( 'change_fixed_color_0_0' )]"
@@ -217,9 +316,8 @@ types CoaDesignerTypes {
         blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_0')]" }
     }
     type emblem_column_1 = emblem_column {
-        blockoverride "visibility"{
-            datacontext = "[GetScriptedGui( 'select_emblem_1' )]"
-            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        blockoverride "column_header"{
+            text = "Emblem 2"
         }
         blockoverride "change_sgui_0"{
             datacontext = "[GetScriptedGui( 'change_fixed_color_1_0' )]"
@@ -233,9 +331,8 @@ types CoaDesignerTypes {
         blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_1')]" }
     }
     type emblem_column_2 = emblem_column {
-        blockoverride "visibility"{
-            datacontext = "[GetScriptedGui( 'select_emblem_2' )]"
-            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        blockoverride "column_header"{
+            text = "Emblem 3"
         }
         blockoverride "change_sgui_0"{
             datacontext = "[GetScriptedGui( 'change_fixed_color_2_0' )]"
@@ -249,9 +346,8 @@ types CoaDesignerTypes {
         blockoverride "itemcontext" { datacontext = "[GetScriptedGui('select_emblem_2')]" }
     }
     type emblem_column_3 = emblem_column {
-        blockoverride "visibility"{
-            datacontext = "[GetScriptedGui( 'select_emblem_3' )]"
-            visible = "[ScriptedGui.IsValid( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
+        blockoverride "column_header"{
+            text = "Emblem 4"
         }
         blockoverride "change_sgui_0"{
             datacontext = "[GetScriptedGui( 'change_fixed_color_3_0' )]"

@@ -1,24 +1,31 @@
 ﻿initialize_fixed_coa = {
-    set_variable = { name = fixed_coa value = yes }
-    set_variable = { name = fixed_template value = 0 }
-    set_variable = { name = fixed_pattern value = flag:pattern_solid }
-    set_variable = { name = fixed_emblem_0 value = flag:ce_empty }
-    set_variable = { name = fixed_emblem_1 value = flag:ce_empty }
-    set_variable = { name = fixed_emblem_2 value = flag:ce_empty }
-    set_variable = { name = fixed_emblem_3 value = flag:ce_empty }
-    set_variable = { name = fixed_color_pattern_0 value = 0 }
-    set_variable = { name = fixed_color_pattern_1 value = 1 }
-    set_variable = { name = fixed_color_pattern_2 value = 2 }
-    set_variable = { name = fixed_color_0_0 value = 0 }
-    set_variable = { name = fixed_color_0_1 value = 1 }
-    set_variable = { name = fixed_color_0_2 value = 2 }
-    set_variable = { name = fixed_color_1_0 value = 0 }
-    set_variable = { name = fixed_color_1_1 value = 1 }
-    set_variable = { name = fixed_color_1_2 value = 2 }
-    set_variable = { name = fixed_color_2_0 value = 0 }
-    set_variable = { name = fixed_color_2_1 value = 1 }
-    set_variable = { name = fixed_color_2_2 value = 2 }
-    set_variable = { name = fixed_color_3_0 value = 0 }
-    set_variable = { name = fixed_color_3_1 value = 1 }
-    set_variable = { name = fixed_color_3_2 value = 2 }
+    if = {
+        limit = {
+            NOT = {
+                exists = var:fixed_coa
+            }
+        }
+        set_variable = { name = fixed_coa value = yes }
+        set_variable = { name = fixed_template value = 0 }
+        set_variable = { name = fixed_pattern value = flag:pattern_solid }
+        set_variable = { name = fixed_emblem_0 value = flag:ce_empty }
+        set_variable = { name = fixed_emblem_1 value = flag:ce_empty }
+        set_variable = { name = fixed_emblem_2 value = flag:ce_empty }
+        set_variable = { name = fixed_emblem_3 value = flag:ce_empty }
+        set_variable = { name = fixed_color_pattern_0 value = 0 }
+        set_variable = { name = fixed_color_pattern_1 value = 1 }
+        set_variable = { name = fixed_color_pattern_2 value = 2 }
+        set_variable = { name = fixed_color_0_0 value = 3 }
+        set_variable = { name = fixed_color_0_1 value = 1 }
+        set_variable = { name = fixed_color_0_2 value = 2 }
+        set_variable = { name = fixed_color_1_0 value = 4 }
+        set_variable = { name = fixed_color_1_1 value = 1 }
+        set_variable = { name = fixed_color_1_2 value = 2 }
+        set_variable = { name = fixed_color_2_0 value = 5 }
+        set_variable = { name = fixed_color_2_1 value = 1 }
+        set_variable = { name = fixed_color_2_2 value = 2 }
+        set_variable = { name = fixed_color_3_0 value = 6 }
+        set_variable = { name = fixed_color_3_1 value = 1 }
+        set_variable = { name = fixed_color_3_2 value = 2 }
+    }
 }
