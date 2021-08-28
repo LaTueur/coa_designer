@@ -76,7 +76,7 @@ select_pattern = {
                     }
                     set_variable = { 
                         name = fixed_color_pattern_&color_types.id&
-                        value = max_fixed_template
+                        value = max_fixed_color
                     }
                 }
             }
@@ -136,7 +136,7 @@ select_pattern = {
                         }
                         set_variable = { 
                             name = fixed_color_&emblem_types.id&_&color_types.id&
-                            value = max_fixed_template
+                            value = max_fixed_color
                         }
                     }
                 }

@@ -71,7 +71,7 @@ change_fixed_color_pattern_0 = {
 				}
 				set_variable = { 
 					name = fixed_color_pattern_0
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -110,7 +110,7 @@ change_fixed_color_pattern_1 = {
 				}
 				set_variable = { 
 					name = fixed_color_pattern_1
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -149,7 +149,7 @@ change_fixed_color_pattern_2 = {
 				}
 				set_variable = { 
 					name = fixed_color_pattern_2
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -204,7 +204,7 @@ change_fixed_color_0_0 = {
 				}
 				set_variable = { 
 					name = fixed_color_0_0
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -243,7 +243,7 @@ change_fixed_color_0_1 = {
 				}
 				set_variable = { 
 					name = fixed_color_0_1
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -282,7 +282,7 @@ change_fixed_color_0_2 = {
 				}
 				set_variable = { 
 					name = fixed_color_0_2
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -337,7 +337,7 @@ change_fixed_color_1_0 = {
 				}
 				set_variable = { 
 					name = fixed_color_1_0
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -376,7 +376,7 @@ change_fixed_color_1_1 = {
 				}
 				set_variable = { 
 					name = fixed_color_1_1
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -415,7 +415,7 @@ change_fixed_color_1_2 = {
 				}
 				set_variable = { 
 					name = fixed_color_1_2
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -470,7 +470,7 @@ change_fixed_color_2_0 = {
 				}
 				set_variable = { 
 					name = fixed_color_2_0
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -509,7 +509,7 @@ change_fixed_color_2_1 = {
 				}
 				set_variable = { 
 					name = fixed_color_2_1
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -548,7 +548,7 @@ change_fixed_color_2_2 = {
 				}
 				set_variable = { 
 					name = fixed_color_2_2
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -603,7 +603,7 @@ change_fixed_color_3_0 = {
 				}
 				set_variable = { 
 					name = fixed_color_3_0
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -642,7 +642,7 @@ change_fixed_color_3_1 = {
 				}
 				set_variable = { 
 					name = fixed_color_3_1
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
@@ -681,7 +681,7 @@ change_fixed_color_3_2 = {
 				}
 				set_variable = { 
 					name = fixed_color_3_2
-					value = max_fixed_template
+					value = max_fixed_color
 				}
 			}
 		}
