@@ -577,6 +577,17 @@ window = {
 										tooltip = RULER_DESIGNER_RESET_TITLE_COA
 										using = tooltip_se
 									}
+
+									coa_customizer_opener = {
+										blockoverride "open_function" {
+											state = {
+												name = _mouse_click
+												delay = 0.001
+												on_finish = "[RulerDesignerWindow.RandomizeTitleCoatOfArms]"
+											}
+											onclick = "[VariableSystem.Set( 'coa_customization_open', 'title_selection' )]"
+										}
+									}
 								}
 							}
 						}
@@ -2091,6 +2102,33 @@ window = {
 		}
 
 		coa_customizer_view = {}
+		coa_customizer_view = {
+			blockoverride "window_visibility"{
+				visible = "[VariableSystem.HasValue( 'coa_customization_open', 'title_selection' )]"
+			}
+			blockoverride "update_function"{
+				state = {
+					name = _mouse_click
+					delay = 0.001
+					on_finish = "[RulerDesignerWindow.RandomizeTitleCoatOfArms]"
+				}
+			}
+			blockoverride "coa_view"{
+				datacontext = "[RulerDesignerWindow.GetCharacterToOverwrite]"
+				datacontext = "[Character.GetPrimaryTitle]"
+				datacontext = "[RulerDesignerWindow.GetTitleCoatOfArms]"
+				coa_realm_coa_designer = {
+					blockoverride "coat_of_arms"
+					{
+						coat_of_arms = "[RulerDesignerCoA.GetCoA.GetTexture('(int32)230','(int32)230')]"
+						coat_of_arms_slot = "[RulerDesignerCoA.GetCoA.GetSlot('(int32)230','(int32)230')]"
+					}
+					blockoverride "coa_button" {
+						alwaystransparent = yes
+					}
+				}
+			}
+		}
 	}
 }
 

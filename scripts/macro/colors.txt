@@ -1,5 +1,5 @@
 colors = {
-	red blue green black purple yellow white
+	red blue green black purple yellow white orange grey brown blue_light green_light yellow_light
 }
 color_types = {
 	0 1 2

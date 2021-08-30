@@ -475,6 +475,27 @@ template = {
 			color1 = list "fixed_color_0_0"
 			color2 = list "fixed_color_0_1"
 			color3 = list "fixed_color_0_2"
+			instance = { position = { 0.5 0.48 } scale = { 0.7 0.7 }  }
+		}
+		colored_emblem = {
+			texture = list "fixed_emblem_1"
+			color1 = list "fixed_color_1_0"
+			color2 = list "fixed_color_1_1"
+			color3 = list "fixed_color_1_2"
+			instance = { position = { 0.5 0.48 } scale = { 1.0 1.0 }  }
+		}
+	}
+	fixed_template_19 = {
+		pattern = list "fixed_pattern"
+		color1 = list "fixed_color_pattern_0"
+		color2 = list "fixed_color_pattern_1"
+		color3 = list "fixed_color_pattern_2"
+
+		colored_emblem = {
+			texture = list "fixed_emblem_0"
+			color1 = list "fixed_color_0_0"
+			color2 = list "fixed_color_0_1"
+			color3 = list "fixed_color_0_2"
 			instance = { position = { 0.3 0.20 } scale = { 0.38 0.38 }  }
 		}
 		colored_emblem = {
@@ -492,7 +513,7 @@ template = {
 			instance = { position = { 0.7 0.70 } scale = { 0.38 0.38 }  }
 		}
 	}
-	fixed_template_19 = {
+	fixed_template_20 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -520,7 +541,7 @@ template = {
 			instance = { position = { 0.500 0.790 } scale = { 0.42 0.42 }  }
 		}
 	}
-	fixed_template_20 = {
+	fixed_template_21 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -548,7 +569,7 @@ template = {
 			instance = { position = { 0.5 0.67 } scale = { 0.45 -0.45 }  }
 		}
 	}
-	fixed_template_21 = {
+	fixed_template_22 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -583,7 +604,7 @@ template = {
 			instance = { position = { 0.75 0.75 }  scale = { 0.5 0.5 }  }
 		}
 	}
-	fixed_template_22 = {
+	fixed_template_23 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -617,7 +638,7 @@ template = {
 			color3 = list "fixed_color_3_2"
 		}
 	}
-	fixed_template_23 = {
+	fixed_template_24 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"
@@ -651,7 +672,7 @@ template = {
 			color3 = list "fixed_color_3_2"
 		}
 	}
-	fixed_template_24 = {
+	fixed_template_25 = {
 		pattern = list "fixed_pattern"
 		color1 = list "fixed_color_pattern_0"
 		color2 = list "fixed_color_pattern_1"

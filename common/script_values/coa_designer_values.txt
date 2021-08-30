@@ -1,6 +1,6 @@
-﻿max_fixed_template = 24
-max_fixed_color = 6
+﻿max_fixed_template = 25
+max_fixed_color = 12
 fixed_emblem_0_needed = -1
 fixed_emblem_1_needed = 8
-fixed_emblem_2_needed = 17
-fixed_emblem_3_needed = 20
+fixed_emblem_2_needed = 18
+fixed_emblem_3_needed = 21

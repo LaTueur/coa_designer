@@ -1,3 +1,5 @@
+@overlay_alpha = 0.4
+
 types CoaDesignerTypes {
     type emblem_list = dynamicgridbox { # Create visuals for a list like in the main artifact window
         ignoreinvisible = yes
@@ -19,10 +21,12 @@ types CoaDesignerTypes {
                 # Tooltip shows modifier description, useful for modifiers that affect a lot of different stats.
                 block "itemcontext" {datacontext = "[GetScriptedGui('select_emblem_0')]"}
                 onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('emblem', MakeScopeFlag(Scope.GetFlagName)).End)]"
-                state = {
-                    name = _mouse_click
-                    delay = 0.001
-                    on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+                block "update_function" {
+                    state = {
+                        name = _mouse_click
+                        delay = 0.001
+                        on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+                    }
                 }
                 text_single = {
                     text = "[Concatenate(Concatenate('@icon_',Scope.GetFlagName), '!')]"
@@ -56,14 +60,14 @@ types CoaDesignerTypes {
 			coat_of_arms_icon = {
 				parentanchor = center
 				size = { 115 115 }
-				coat_of_arms = "[RulerDesignerCoA.GetCoA.GetTexture('(int32)124','(int32)124')]"
-				coat_of_arms_slot = "[RulerDesignerCoA.GetCoA.GetSlot('(int32)124','(int32)124')]"
+				coat_of_arms = "[RulerDesignerCoA.GetCoA.GetTexture('(int32)230','(int32)230')]"
+				coat_of_arms_slot = "[RulerDesignerCoA.GetCoA.GetSlot('(int32)230','(int32)230')]"
 				coat_of_arms_mask = "gfx/interface/coat_of_arms/house_mask.dds"
 
 				modify_texture = {
 					texture = "gfx/interface/coat_of_arms/coa_overlay.dds"
 					blend_mode = overlay
-					alpha = 0.4
+					alpha = @overlay_alpha
 				}
 			}
 
@@ -71,6 +75,78 @@ types CoaDesignerTypes {
 				framesize = { 169 172 }
 				size = { 169 172 }
 				texture = "gfx/interface/coat_of_arms/dynasty_115.dds"
+			}
+		}
+	}
+	type coa_realm_coa_designer = button_group {
+		using = CoA_Realm_Defaults
+
+		flowcontainer = {
+			margin = { 3 7 }
+			direction = vertical
+			spacing = -3
+			ignoreinvisible = yes
+
+			icon = {
+				name = "crown"
+				parentanchor = hcenter
+				texture = "gfx/interface/coat_of_arms/crown_strip_115.dds"
+				frame = "[Character.GetPrimaryTitle.GetTierFrame]"
+				framesize = { 80 56 }
+
+				block "crown" {
+					visible = no
+				}
+			}
+
+			icon = {
+				name = "mercenary"
+				visible = "[Character.GetPrimaryTitle.IsMercenaryCompany]"
+				parentanchor = hcenter
+				texture = "gfx/interface/coat_of_arms/mercenary_topframe_115.dds"
+			}
+
+			icon = {
+				name = "holy_order"
+				visible = "[Character.GetPrimaryTitle.IsHolyOrder]"
+				parentanchor = hcenter
+				texture = "gfx/interface/coat_of_arms/holyorder_topframe_115.dds"
+			}
+
+			widget = {
+				parentanchor = hcenter
+				size = { 115 128 }
+
+				coat_of_arms_icon = {
+					parentanchor = center
+					size = { 115 115 }
+					block "coat_of_arms"
+					{
+						coat_of_arms = "[Character.GetPrimaryTitle.GetTitleCoA.GetTexture('(int32)230','(int32)230')]"
+						coat_of_arms_slot = "[Character.GetPrimaryTitle.GetTitleCoA.GetSlot('(int32)230','(int32)230')]"
+					}
+					coat_of_arms_mask = "[Character.GetGovernment.GetRealmMask]"
+
+					using = CoA_Realm_Hover_Glow
+
+					modify_texture = {
+						texture = "[Character.GetGovernment.GetRealmMask]"
+						blend_mode = overlay
+						alpha = @overlay_alpha
+					}
+
+					coa_realm_overlay = {
+						texture = "[Character.GetGovernment.GetRealmFrame('(int32)115')]"
+						size = { 115 128 }
+						framesize = { 115 128 }
+					}
+
+					coa_realm_topframe = {
+						texture ="gfx/interface/coat_of_arms/topframe_115.dds"
+						size = { 115 128 }
+						framesize = { 115 128 }
+					}
+				}
 			}
 		}
 	}
@@ -90,10 +166,12 @@ types CoaDesignerTypes {
 			size = { 25 25 }
 			parentanchor = left|vcenter
             onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('decrease',MakeScopeBool('(bool)yes')).End)]"
-            state = {
-                name = _mouse_click
-                delay = 0.001
-                on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+            block "update_function" {
+                state = {
+                    name = _mouse_click
+                    delay = 0.001
+                    on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+                }
             }
         }
 		text_single = {
@@ -111,17 +189,22 @@ types CoaDesignerTypes {
 			size = { 25 25 }
 			parentanchor = right|vcenter
             onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(Culture.MakeScope).AddScope('decrease',MakeScopeBool('(bool)no')).End)]"
-            state = {
-                name = _mouse_click
-                delay = 0.001
-                on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+            block "update_function" {
+                state = {
+                    name = _mouse_click
+                    delay = 0.001
+                    on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+                }
             }
         }
 	}
     type coa_customizer_view = hbox
     {
         name = "coa_customizer_view"
-        visible = "[VariableSystem.Exists( 'coa_customization_open' )]"
+
+        block "window_visibility"{
+			visible = "[VariableSystem.HasValue( 'coa_customization_open', 'dynasty_selection' )]"
+        }
         layoutpolicy_horizontal = expanding
         layoutpolicy_vertical = expanding
         margin = { 20 20 }
@@ -143,14 +226,16 @@ types CoaDesignerTypes {
                     text = "Template"
                 }
             }
-            coa_dynasty_coa_designer = {
-                datacontext = "[RulerDesignerWindow.GetDynastyCoatOfArms]"
-                blockoverride "frame_override"
-                {
-                    frame = 2
-                }
-                blockoverride "coa_button" {
-                    alwaystransparent = yes
+            block "coa_view"{
+                coa_dynasty_coa_designer = {
+                    datacontext = "[RulerDesignerWindow.GetDynastyCoatOfArms]"
+                    blockoverride "frame_override"
+                    {
+                        frame = 2
+                    }
+                    blockoverride "coa_button" {
+                        alwaystransparent = yes
+                    }
                 }
             }
             expand = {}
@@ -291,12 +376,14 @@ types CoaDesignerTypes {
         datacontext = "[GetScriptedGui('initialize_fixed_coa')]"
         datacontext = "[RulerDesignerWindow.GetCulture]"
         onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Culture.MakeScope ).End ) ]"
-        state = {
-            name = _mouse_click
-            delay = 0.001
-            on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+        block "open_function" {
+            state = {
+                name = _mouse_click
+                delay = 0.001
+                on_finish = "[RulerDesignerWindow.RandomizeDynastyCoatOfArms]"
+            }
+            onclick = "[VariableSystem.Set( 'coa_customization_open', 'dynasty_selection' )]"
         }
-        onclick = "[VariableSystem.Toggle( 'coa_customization_open' )]"
         tooltip = "#T Edit Coat of Arms#!"
         using = tooltip_se
     }

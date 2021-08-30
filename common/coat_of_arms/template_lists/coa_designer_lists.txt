@@ -56,6 +56,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_0 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_0 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_0 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_0 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_0 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_0 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_pattern_1 = { 
 		special_selection = { 
@@ -113,6 +161,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_1 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_1 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_1 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_1 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_1 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_1 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 	fixed_color_pattern_2 = { 
@@ -172,6 +268,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_2 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_2 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_2 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_2 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_2 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_pattern_2 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_0_0 = { 
 		special_selection = { 
@@ -229,6 +373,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_0 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_0 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_0 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_0 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_0 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_0 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 	fixed_color_0_1 = { 
@@ -288,6 +480,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_1 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_1 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_1 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_1 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_1 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_1 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_0_2 = { 
 		special_selection = { 
@@ -345,6 +585,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_2 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_2 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_2 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_2 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_2 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_0_2 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 	fixed_color_1_0 = { 
@@ -404,6 +692,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_0 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_0 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_0 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_0 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_0 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_0 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_1_1 = { 
 		special_selection = { 
@@ -461,6 +797,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_1 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_1 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_1 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_1 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_1 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_1 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 	fixed_color_1_2 = { 
@@ -520,6 +904,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_2 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_2 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_2 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_2 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_2 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_1_2 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_2_0 = { 
 		special_selection = { 
@@ -577,6 +1009,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_0 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_0 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_0 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_0 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_0 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_0 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 	fixed_color_2_1 = { 
@@ -636,6 +1116,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_1 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_1 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_1 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_1 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_1 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_1 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_2_2 = { 
 		special_selection = { 
@@ -693,6 +1221,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_2 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_2 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_2 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_2 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_2 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_2_2 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 	fixed_color_3_0 = { 
@@ -752,6 +1328,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_0 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_0 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_0 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_0 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_0 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_0 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_3_1 = { 
 		special_selection = { 
@@ -810,6 +1434,54 @@
 			}
 			100 = "white"
 		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_1 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_1 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_1 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_1 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_1 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_1 = 12
+				}
+			}
+			100 = "yellow_light"
+		}
 	}
 	fixed_color_3_2 = { 
 		special_selection = { 
@@ -867,6 +1539,54 @@
 				}
 			}
 			100 = "white"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_2 = 7
+				}
+			}
+			100 = "orange"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_2 = 8
+				}
+			}
+			100 = "grey"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_2 = 9
+				}
+			}
+			100 = "brown"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_2 = 10
+				}
+			}
+			100 = "blue_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_2 = 11
+				}
+			}
+			100 = "green_light"
+		}
+		special_selection = { 
+			trigger = { 
+				scope:culture = { 
+					var:fixed_color_3_2 = 12
+				}
+			}
+			100 = "yellow_light"
 		}
 	}
 }
